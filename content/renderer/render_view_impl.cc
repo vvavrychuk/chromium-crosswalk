@@ -1125,6 +1125,9 @@ void RenderView::ApplyWebPreferences(const WebPreferences& prefs,
 
   settings->setSelectionIncludesAltImageText(true);
 
+  // Crosswalk shared settings:
+  settings->setMainFrameClipsContent(false);
+
 #if defined(OS_TIZEN)
   // Scrollbars should not be stylable.
   settings->setAllowCustomScrollbarInMainFrame(false);
