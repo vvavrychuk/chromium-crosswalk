@@ -1132,9 +1132,6 @@ void RenderView::ApplyWebPreferences(const WebPreferences& prefs,
   // Scrollbars should not be stylable.
   settings->setAllowCustomScrollbarInMainFrame(false);
 
-  // Don't auto play music on Tizen devices.
-  settings->setMediaPlaybackRequiresUserGesture(true);
-
   // IME support
   settings->setAutoZoomFocusedNodeToLegibleScale(true);
 
