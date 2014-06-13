@@ -67,6 +67,11 @@ static void SetRuntimeFeatureDefaultsForPlatform() {
     // Only Android, ChromeOS, and IOS support NetInfo right now.
     WebRuntimeFeatures::enableNetworkInformation(false);
 #endif
+
+#if defined(OS_TIZEN)
+  WebRuntimeFeatures::enableScreenOrientation(true);
+  WebRuntimeFeatures::enableOrientationEvent(true);
+#endif  // defined(OS_TIZEN)
 }
 
 void SetRuntimeFeaturesDefaultsAndUpdateFromArgs(
