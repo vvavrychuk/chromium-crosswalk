@@ -51,6 +51,7 @@ static void SetRuntimeFeatureDefaultsForPlatform() {
   // Android does not yet support NavigatorContentUtils.
   WebRuntimeFeatures::enableNavigatorContentUtils(false);
   WebRuntimeFeatures::enableTouchIconLoading(true);
+  WebRuntimeFeatures::enableScreenOrientation(true);
   WebRuntimeFeatures::enableOrientationEvent(true);
   WebRuntimeFeatures::enableFastMobileScrolling(true);
   WebRuntimeFeatures::enableMediaCapture(true);
